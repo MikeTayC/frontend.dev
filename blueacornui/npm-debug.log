@@ -1,0 +1,104 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'install', '-', 'g', 'bower' ]
+2 info using npm@3.3.3
+3 info using node@v4.1.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData -
+8 silly fetchPackageMetaData g
+9 silly fetchPackageMetaData bower
+10 silly fetchOtherPackageData -
+11 silly cache add args [ '-', null ]
+12 verbose cache add spec -
+13 silly fetchNamedPackageData g
+14 silly mapToRegistry name g
+15 silly mapToRegistry using default registry
+16 silly mapToRegistry registry https://registry.npmjs.org/
+17 silly mapToRegistry uri https://registry.npmjs.org/g
+18 silly fetchNamedPackageData bower
+19 silly mapToRegistry name bower
+20 silly mapToRegistry using default registry
+21 silly mapToRegistry registry https://registry.npmjs.org/
+22 silly mapToRegistry uri https://registry.npmjs.org/bower
+23 silly cache add parsed spec Result {
+23 silly cache add   raw: '-',
+23 silly cache add   scope: null,
+23 silly cache add   name: null,
+23 silly cache add   rawSpec: '-',
+23 silly cache add   spec: '/home/mike/sites/frontend.dev/blueacornui/-',
+23 silly cache add   type: 'local' }
+24 verbose request uri https://registry.npmjs.org/g
+25 verbose request no auth needed
+26 info attempt registry request try #1 at 13:06:47
+27 verbose request id 1e328047a400144b
+28 http request GET https://registry.npmjs.org/g
+29 error addLocal Could not install /home/mike/sites/frontend.dev/blueacornui/-
+30 silly fetchPackageMetaData Error: ENOENT: no such file or directory, open '/home/mike/sites/frontend.dev/blueacornui/-'
+30 silly fetchPackageMetaData     at Error (native)
+30 silly fetchPackageMetaData  error for - { [Error: ENOENT: no such file or directory, open '/home/mike/sites/frontend.dev/blueacornui/-']
+30 silly fetchPackageMetaData   errno: -2,
+30 silly fetchPackageMetaData   code: 'ENOENT',
+30 silly fetchPackageMetaData   syscall: 'open',
+30 silly fetchPackageMetaData   path: '/home/mike/sites/frontend.dev/blueacornui/-' }
+31 verbose request uri https://registry.npmjs.org/bower
+32 verbose request no auth needed
+33 info attempt registry request try #1 at 13:06:47
+34 verbose etag "ALX8XFSMHOTGLR1XWQRXBZ706"
+35 http request GET https://registry.npmjs.org/bower
+36 http 200 https://registry.npmjs.org/g
+37 silly get cb [ 200,
+37 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+37 silly get     etag: '"8AYIUDSUHLGXZT7X52XKA2O0S"',
+37 silly get     'content-type': 'application/json',
+37 silly get     'cache-control': 'max-age=60',
+37 silly get     'content-length': '6814',
+37 silly get     'accept-ranges': 'bytes',
+37 silly get     date: 'Thu, 24 Sep 2015 17:06:48 GMT',
+37 silly get     via: '1.1 varnish',
+37 silly get     age: '0',
+37 silly get     connection: 'keep-alive',
+37 silly get     'x-served-by': 'cache-dfw1831-DFW',
+37 silly get     'x-cache': 'MISS',
+37 silly get     'x-cache-hits': '0',
+37 silly get     'x-timer': 'S1443114407.969410,VS0,VE191',
+37 silly get     vary: 'Accept' } ]
+38 verbose get saving g to /home/mike/.npm/registry.npmjs.org/g/.cache.json
+39 http 200 https://registry.npmjs.org/bower
+40 silly get cb [ 200,
+40 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+40 silly get     etag: '"9P8CWH4BFQQI7BXIBJ8P26USD"',
+40 silly get     'content-type': 'application/json',
+40 silly get     'cache-control': 'max-age=60',
+40 silly get     'content-length': '122812',
+40 silly get     'accept-ranges': 'bytes',
+40 silly get     date: 'Thu, 24 Sep 2015 17:06:48 GMT',
+40 silly get     via: '1.1 varnish',
+40 silly get     age: '0',
+40 silly get     connection: 'keep-alive',
+40 silly get     'x-served-by': 'cache-dfw1820-DFW',
+40 silly get     'x-cache': 'HIT',
+40 silly get     'x-cache-hits': '1',
+40 silly get     'x-timer': 'S1443114407.972309,VS0,VE268',
+40 silly get     vary: 'Accept' } ]
+41 verbose get saving bower to /home/mike/.npm/registry.npmjs.org/bower/.cache.json
+42 silly rollbackFailedOptional Starting
+43 silly rollbackFailedOptional Finishing
+44 silly runTopLevelLifecycles Starting
+45 silly runTopLevelLifecycles Finishing
+46 silly install printInstalled
+47 verbose stack Error: ENOENT: no such file or directory, open '/home/mike/sites/frontend.dev/blueacornui/-'
+47 verbose stack     at Error (native)
+48 verbose cwd /home/mike/sites/frontend.dev/blueacornui
+49 error Linux 3.16.0-30-generic
+50 error argv "/usr/bin/nodejs" "/usr/bin/npm" "install" "-" "g" "bower"
+51 error node v4.1.0
+52 error npm  v3.3.3
+53 error path /home/mike/sites/frontend.dev/blueacornui/-
+54 error code ENOENT
+55 error errno -2
+56 error syscall open
+57 error enoent ENOENT: no such file or directory, open '/home/mike/sites/frontend.dev/blueacornui/-'
+57 error enoent This is most likely not a problem with npm itself
+57 error enoent and is related to npm not being able to find a file.
+58 verbose exit [ -2, true ]
